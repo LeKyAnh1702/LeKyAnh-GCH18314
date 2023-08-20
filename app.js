@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 //khai báo mongoose
 var mongoose = require('mongoose'); 
-var uri = "mongodb+srv://lekyanh1702:LEKYANH170200a@cluster0.fcotz9g.mongodb.net/gch18314";
+var uri = "mongodb+srv://lekyanh1702:LEKYANH170200a@cluster0.qkq6jzt.mongodb.net/gch18314";
 mongoose.connect(uri)
 .then(() => console.log('connect to db succeed'))
 .catch(err => console.log(err));
