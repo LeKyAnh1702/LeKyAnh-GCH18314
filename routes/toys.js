@@ -29,8 +29,9 @@ router.post('/add', async (req, res) => {
 
 router.get('/edit/:id', async (req, res) => {
    var id = req.params.id;
+   var categories = await CategoryModel.find();
    var toys = await ToyModel.findById(id);
-   res.render('toys/toysEdit', { toys: toys });
+   res.render('toys/toysEdit', { toys: toys, category: categories });
 });
 
 router.post('/edit/:id', async (req, res) => {
